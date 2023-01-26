@@ -17,4 +17,12 @@ workers permissions and determine their permission to make action in the system.
 To run the Backend you have to use .net core 3 sdk, 3.1.3 version for accurancy.
 
 And then you have to install dotnet ef tool for migration purposes and updating the DB.
-To prevent fatal errors, i do recommend install dotnet ef
+To prevent fatal errors, i do recommend install dotnet ef 3.1.1 version, and then just follow this steps:
+
+1. To check build errors: dotnet build
+
+2. To add a migration before updating the DB: dotnet ef migrations add "ChooseMigrationNameRecommendedToUsePascalCase"
+
+3. To update the DB: dotnet ef database update
+
+4. To run the Backend: dotnet run
